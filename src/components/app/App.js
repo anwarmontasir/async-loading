@@ -16,7 +16,7 @@ class App extends Component {
           <p>{loading ? 'I am loading' : 'I am NOT loading'}</p>
           <Notes />
           { error && 
-            <pre style={{ color: 'red '}}>
+            <pre style={{ color: 'red ' }}>
               {error.message
                 ? error.message
                 : error.error ? error.error : error
