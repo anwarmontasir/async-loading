@@ -44,7 +44,7 @@ function remove(id) {
   });
 }
 
-function addComment(noteID, comment) {
+function addComment(noteId, comment) {
   return doFetch(`${URL}/${noteId}/comments`, {
     method: 'POST',
     body: JSON.stringify(comment),
