@@ -28,7 +28,7 @@ describe('error reducer', () => {
   
   it('sets an error', () => {
     const state = error(null, { type: ERROR, payload: { message: 'error' } });
-    expect(state).toBeNull();
+    expect(state).toEqual({ message: 'error' });
   });
   
   it('clears an error', () => {
