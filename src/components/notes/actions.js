@@ -29,7 +29,7 @@ export function updateNote(note) {
   };
 }
 
-export function removeNote(note) {
+export function removeNote(id) {
   return {
     type: NOTE_REMOVE,
     payload: notesApi.remove(id).then(() => id)

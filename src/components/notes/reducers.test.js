@@ -7,7 +7,7 @@ it('Has a default of empty array', () => {
 
 const noteToAdd = {
   id: 123,
-  timestamp: new Date();
+  timestamp: new Date(),
   text: 'I am a note'
 };
 
@@ -18,7 +18,7 @@ it('Adds a note', () => {
 
 it('Removes a note', () => {
   const state = notes([noteToAdd], { type: NOTE_REMOVE, payload: 123 });
-  expect(state.toEqual([]));
+  expect(state).toEqual([]);
 });
 
 it('Updates a note', () => {
