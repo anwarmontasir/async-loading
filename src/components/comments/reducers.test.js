@@ -3,7 +3,7 @@ import { COMMENT_ADD, COMMENT_REMOVE, commentsByNote  } from './reducers';
 
 it('has default state of {}', () => {
   const state = commentsByNote(undefined, {});
-  expect(state.toEqual({}));
+  expect(state).toEqual({});
 });
 
 const addNote = () => commentsByNote({}, {

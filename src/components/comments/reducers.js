@@ -21,14 +21,14 @@ export function commentsByNote(state = {}, { type, payload }) {
       return nextState;
     }
     case COMMENT_ADD: {
-      const { noteID } = payload;
+      const { noteId } = payload;
       const noteComments = state[noteId];
 
       return {
         ...state,
         [noteId]: [
           ...noteComments,
-          payload.comment``
+          payload.comment
         ]
       };
     }
